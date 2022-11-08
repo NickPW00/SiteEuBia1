@@ -40,13 +40,23 @@ footer{
     color:aliceblue
 }
 .grid_photos{
-  /* display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-content: stretch;
+
+}
+.grid_photos img{
+    width: 250px;
+}
+/*  .grid_photos{
+   display: grid;
   grid-template-columns: auto auto auto auto; 
-  gap: 10px; */
+  gap: 10px; 
     
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw); /* 5 viewport width (5 "partes" da largura do viewport). */
+  grid-template-rows: repeat(8, 5vw); /* 5 viewport width (5 "partes" da largura do viewport). 
   gap: 10px;
 } 
 .grid_photos img{
@@ -54,3 +64,4 @@ footer{
     height: 100%;
     object-fit: cover;
 }
+ */ 
