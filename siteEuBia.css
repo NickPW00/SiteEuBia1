@@ -13,10 +13,22 @@ html, body {
 }
 header{
     background-color: rgba(70, 0, 135);
+    background-image: linear-gradient( rgba(70, 0, 135), rgb(28, 8, 46));
     border: red solid 2px;
     font-family: Roboto-Regular;
     color: white;
     padding: 5px
+}
+footer{
+    background-color: rgba(70, 0, 135);
+    border: red solid 2px;
+    background-image: linear-gradient(to top, rgba(70, 0, 135), rgb(28, 8, 46));
+    font-family: Roboto-Regular;
+    color: white;
+    padding: 5px
+}
+section{
+    background-color: rgb(28, 8, 46) ;
 }
 h1{
     letter-spacing: 5px;
@@ -27,27 +39,49 @@ div{
     font-family: 'Roboto', sans-serif;
     padding: 5px
 }
-
-footer{
-    background-color: rgba(70, 0, 135);
+figure{
     border: red solid 2px;
-    font-family: Roboto-Regular;
-    color: white;
-    padding: 5px
+    margin: 5px 5px;
+    width: 150px;
 }
 .teste{
     background-color: rgb(28, 8, 46);
     color:aliceblue
 }
+.img1 { grid-area: 1;}
+.img2 { grid-area: 2;}
+.img3 { grid-area: 3;}
+.img4 { grid-area: 4;}
+.img5 { grid-area: 5;}
+.img6 { grid-area: 6;}
+.img7 { grid-area: 7;}
+.img8 { grid-area: 8;}
+.img9 { grid-area: 9;}
+.img10 { grid-area: 10;}
+.img11 { grid-area: 11;}
+.img12 { grid-area: 12;}
+.img13 { grid-area: 13;}
+.img14 { grid-area: 14;}
+.img15 { grid-area: 15;}
+
 .grid_photos{
+    display:grid;
+    grid-template-areas: 
+    '1 2 3 4'
+    '5 6 7 8'
+    '9 10 11 12';
+    gap: 10px;
+
+}
+.grid_photos img{
+    width: 150px;
+} 
+/* .grid_photos{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     align-content: stretch;
 
-}
-.grid_photos img{
-    width: 250px;
 }
 /*  .grid_photos{
    display: grid;
